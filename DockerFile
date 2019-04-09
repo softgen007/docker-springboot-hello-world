@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+EXPOSE 8080
+ADD /target/docker-springboot-hello-world-0.0.1-SNAPSHOT.jar docker-springboot-hello-world.jar
+ENTRYPOINT ["java", "-jar", "docker-springboot-hello-world.jar"]
